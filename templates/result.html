@@ -8,29 +8,42 @@
         body {
             font-family: Arial, sans-serif;
             background: linear-gradient(135deg, #00264d, #004080); /* Dark gradient background */
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
             margin: 0;
-            padding: 0;
+        }
+        .container-div {
+            width: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            margin-bottom: 20px; /* Add space between container and link bar */
         }
         .container {
-            max-width: 1000px;
+            max-width: 600px;
             width: 100%;
             padding: 20px;
             background: linear-gradient(135deg, #e0f7ff, #ffffff); /* Light gradient card background */
             border-radius: 12px;
             box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); /* Enhanced shadow for card */
             transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effect */
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         .container:hover {
             box-shadow: 0 16px 32px rgba(0, 0, 0, 0.25); /* Darker shadow on hover */
             transform: translateY(-10px); /* Slight lift effect */
         }
         .link-bar {
-            display: grid;
+            width: 100%;
+            display: flex;
             justify-content: center;
+            align-items: center;
+            gap: 10px; /* Space between buttons */
         }
         .card {
             display: flex;
@@ -70,37 +83,33 @@
             height: auto;
             border-radius: 12px;
         }
-        .back-link {
-        display: inline-block; /* Change to inline-block for better button styling */
-        margin-top: 20px;
-        padding: 10px 20px; /* Add padding for button-like appearance */
-        font-size: 16px;
-        text-align: center;
-        color: #fff; /* Change text color to white */
-        background-color: #007bff; /* Button background color */
-        border-radius: 25px; /* Rounded corners */
-        text-decoration: none; /* Remove underline */
-        transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effect */
-        }
-        .back-link:hover {
-        background-color: #0056b3; /* Darker background on hover */
-        transform: translateY(-5px); /* Slight lift effect on hover */
+        .back-link{
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            text-align: center;
+            color: #fff;
+            background-color: #f44336;
+            border-radius: 12px;
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.3s ease;
         }
         .offer-link {
-        display: inline-block; /* Change to inline-block for better button styling */
-        margin-top: 20px;
-        padding: 10px 20px; /* Add padding for button-like appearance */
-        font-size: 16px;
-        text-align: center;
-        color: #fff; /* Change text color to white */
-        background-color: #007bff; /* Button background color */
-        border-radius: 25px; /* Rounded corners */
-        text-decoration: none; /* Remove underline */
-        transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effect */
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            text-align: center;
+            color: #fff;
+            background-color: #26b613;
+            border-radius: 12px;
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.3s ease;
         }
-        .offer-link:hover {
-        background-color: #0056b3; /* Darker background on hover */
-        transform: translateY(-5px); /* Slight lift effect on hover */
+        .back-link:hover, .offer-link:hover {
+            background-color: #0056b3;
+            transform: translateY(-5px);
         }
         @media (max-width: 405px) {
             .card {
@@ -121,20 +130,22 @@
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="card">
-            <div class="card-content">
-                <h2>{{ horse_name }}</h2>
-                <p><strong>URL:</strong> <a href="{{ scraping_url }}" target="_blank">PFL</a></p>
-                <p><strong>Career Summary:</strong> {{ career_summary_stats }}</p>
-                <p><strong>Career Earnings:</strong> {{ career_earnings }}</p>
-                <p><strong>Racing Direction:</strong> {{ racing_direction }}</p>
-                <p><strong>Racing Surface:</strong> {{ racing_surface }}</p>
-                <p><strong>Racing Condition:</strong> {{ racing_condition }}</p>
-                <p><strong>Stable Name:</strong> {{ stable_name }}</p>
-            </div>
-            <div class="card-image">
-                <img src="{{ image_url }}" alt="Horse Portrait">
+    <div class="container-div">
+        <div class="container">
+            <div class="card">
+                <div class="card-content">
+                    <h2>{{ horse_name }}</h2>
+                    <p><strong>URL:</strong> <a href="{{ scraping_url }}" target="_blank">PFL</a></p>
+                    <p><strong>Career Summary:</strong> {{ career_summary_stats }}</p>
+                    <p><strong>Career Earnings:</strong> {{ career_earnings }}</p>
+                    <p><strong>Racing Direction:</strong> {{ racing_direction }}</p>
+                    <p><strong>Racing Surface:</strong> {{ racing_surface }}</p>
+                    <p><strong>Racing Condition:</strong> {{ racing_condition }}</p>
+                    <p><strong>Stable Name:</strong> {{ stable_name }}</p>
+                </div>
+                <div class="card-image">
+                    <img src="{{ image_url }}" alt="Horse Portrait">
+                </div>
             </div>
         </div>
     </div>

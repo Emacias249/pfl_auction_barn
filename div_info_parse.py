@@ -13,7 +13,6 @@ def find_horse_stats(file_path):
     scraping_url = None
     if first_line.startswith("Scraping URL:"):
         scraping_url = first_line[len("Scraping URL:"):].strip()
-        print(f"Horse URL: {scraping_url}")
     
     # Extract the second line
     second_line = lines[3].strip()
@@ -73,14 +72,4 @@ def find_horse_stats(file_path):
 file_path = 'div_info.txt'
 results = find_horse_stats(file_path)
 horse_name, scraping_url, career_summary_stats, career_earnings, image_url, racing_direction, racing_surface, racing_condition, stable_name = results
-
-print(f"Horse Name: {horse_name}")
-print(f"Stable Name: {stable_name}")
-print(f"Horse URL: {scraping_url if scraping_url else 'Not Found'}")
-print(f"Career Summary: {career_summary_stats}")
-print(f"Career Earnings: {career_earnings}")
-print(f"Image URL: {image_url}")
-print(f"Racing Direction: {racing_direction}")
-print(f"Racing Surface: {racing_surface}")
-print(f"Racing Condition: {racing_condition}")
 

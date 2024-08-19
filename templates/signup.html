@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #00264d, #004080);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .signup-card {
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+            max-width: 400px;
+            width: 100%;
+        }
+        .signup-card h2 {
+            margin-bottom: 20px;
+            color: #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            align-content: center;
+        }
+        .signup-card input[type="text"], .signup-card input[type="password"], .signup-card button {
+            width: 95%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+        }
+        .signup-card button {
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .signup-card button:hover {
+            background-color: #0056b3;
+            transform: translateY(-3px);
+        }
+        .signup-card a {
+            display: block;
+            text-align: center;
+            color: #007bff;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+        .button-div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="signup-card">
+        <h2>Sign Up</h2>
+        <form action="/signup" method="POST">
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <div class="button-div">
+                <button type="submit">Sign Up</button>
+            </div>
+        </form>
+        <a href="/login">Already have an account? Login</a>
+    </div>
+</body>
+</html>

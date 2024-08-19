@@ -1,27 +1,121 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Horse Stats Search</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PFL Offer Barn Directory</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #00264d, #004080); /* Dark gradient background */
-            display: block;
-            justify-content: center;
-            align-items: center;
+            margin: 0;
+            padding: 0;
             height: 100vh;
-            color: white;
+            background: linear-gradient(135deg, #00264d, #004080); /* Dark gradient background */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
-    </style>    
+
+        .auction-barn {
+            width: 100%;
+            max-width: 800px;
+            background: linear-gradient(135deg, #e0f7ff, #ffffff); /* Light gradient card background */
+            border-radius: 12px;
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); /* Enhanced shadow for card */
+            padding: 20px;
+            margin-top: 5%; /* Adjust the margin to position at the top 30% */
+            transition: box-shadow 0.3s ease, transform 0.3s ease;
+        }
+
+        .auction-barn h1 {
+            text-align: center;
+            font-size: 32px;
+            color: #333;
+        }
+
+        .auction-barn form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .auction-barn input[type="text"], .auction-barn button {
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .auction-barn button {
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .auction-barn button:hover {
+            background-color: #0056b3;
+            transform: translateY(-3px); /* Slight lift effect */
+        }
+
+        .current-bids {
+            margin-top: 20px;
+            width: 100%;
+            padding: 20px;
+            background: linear-gradient(135deg, #f0f0f0, #fafafa); /* Light background for bids section */
+            border-radius: 12px;
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
+            height: 60%; /* Ensures this section takes up 60% of the screen */
+            overflow-y: auto; /* Allows scrolling if there are many bids */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0.6;
+            border-radius: 12px;
+        }
+
+        .bid-card {
+            background: #ffffff;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            margin-bottom: 15px;
+        }
+
+        @media (max-width: 600px) {
+            .auction-barn {
+                width: 90%;
+                padding: 15px;
+            }
+
+            .auction-barn h1 {
+                font-size: 28px;
+            }
+
+            .auction-barn input[type="text"], .auction-barn button {
+                max-width: 100%;
+            }
+
+            .current-bids {
+                padding: 15px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>Search for Horse Stats</h1>
-    <form method="post">
-        <label for="horse_url">Horse URL:</label>
-        <input type="text" id="horse_url" name="horse_url" required>
-        <button type="submit">Search </button>
-    </form>
+    <div class="auction-barn">
+        <h1>PFL Offer Barn Directory</h1>
+        <form action="/search" method="GET">
+            <input type="text" name="horse_url" placeholder="Enter Horse URL" required>
+            <button type="submit">Search</button>
+        </form>
+    </div>
+    <div class="current-bids">
+        <h2>Current Bids</h2>
+        <!-- Generated bid cards will be inserted here -->
+    </div>
 </body>
 </html>
