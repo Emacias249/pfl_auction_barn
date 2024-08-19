@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Horse Stats Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #00264d, #004080); /* Dark gradient background */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            max-width: 1000px;
+            width: 100%;
+            padding: 20px;
+            background: linear-gradient(135deg, #e0f7ff, #ffffff); /* Light gradient card background */
+            border-radius: 12px;
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); /* Enhanced shadow for card */
+            transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effect */
+        }
+        .container:hover {
+            box-shadow: 0 16px 32px rgba(0, 0, 0, 0.25); /* Darker shadow on hover */
+            transform: translateY(-10px); /* Slight lift effect */
+        }
+        .link-bar {
+            display: grid;
+            justify-content: center;
+        }
+        .card {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+            gap: 20px; /* Add some space between image and content */
+        }
+        .card-content {
+            flex: 1;
+            padding: 20px;
+            border-right: 1px solid #ddd;
+        }
+        .card-content h2 {
+            margin: 0 0 15px 0;
+            font-size: 24px;
+            color: #333;
+        }
+        .card-content p {
+            margin: 10px 0;
+            font-size: 16px;
+            color: #666;
+        }
+        .card-content a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .card-content a:hover {
+            text-decoration: underline;
+        }
+        .card-image {
+            flex-shrink: 0;
+            max-width: 400px;
+        }
+        .card-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+        }
+        .back-link {
+        display: inline-block; /* Change to inline-block for better button styling */
+        margin-top: 20px;
+        padding: 10px 20px; /* Add padding for button-like appearance */
+        font-size: 16px;
+        text-align: center;
+        color: #fff; /* Change text color to white */
+        background-color: #007bff; /* Button background color */
+        border-radius: 25px; /* Rounded corners */
+        text-decoration: none; /* Remove underline */
+        transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effect */
+        }
+        .back-link:hover {
+        background-color: #0056b3; /* Darker background on hover */
+        transform: translateY(-5px); /* Slight lift effect on hover */
+        }
+        .offer-link {
+        display: inline-block; /* Change to inline-block for better button styling */
+        margin-top: 20px;
+        padding: 10px 20px; /* Add padding for button-like appearance */
+        font-size: 16px;
+        text-align: center;
+        color: #fff; /* Change text color to white */
+        background-color: #007bff; /* Button background color */
+        border-radius: 25px; /* Rounded corners */
+        text-decoration: none; /* Remove underline */
+        transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effect */
+        }
+        .offer-link:hover {
+        background-color: #0056b3; /* Darker background on hover */
+        transform: translateY(-5px); /* Slight lift effect on hover */
+        }
+        @media (max-width: 405px) {
+            .card {
+                flex-direction: column;
+                align-items: center;
+                gap: 20px; /* Adjust the gap for the stacked layout */
+            }
+            .card-content {
+                border-right: none;
+                text-align: center;
+                width: 100%; /* Ensure the content takes full width */
+            }
+            .card-image {
+                max-width: 100%; /* Allow image to be responsive */
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-content">
+                <h2>{{ horse_name }}</h2>
+                <p><strong>URL:</strong> <a href="{{ scraping_url }}" target="_blank">PFL</a></p>
+                <p><strong>Career Summary:</strong> {{ career_summary_stats }}</p>
+                <p><strong>Career Earnings:</strong> {{ career_earnings }}</p>
+                <p><strong>Racing Direction:</strong> {{ racing_direction }}</p>
+                <p><strong>Racing Surface:</strong> {{ racing_surface }}</p>
+                <p><strong>Racing Condition:</strong> {{ racing_condition }}</p>
+                <p><strong>Stable Name:</strong> {{ stable_name }}</p>
+            </div>
+            <div class="card-image">
+                <img src="{{ image_url }}" alt="Horse Portrait">
+            </div>
+        </div>
+    </div>
+    <div class="link-bar">
+        <a class="offer-link" href="offer.html">Send Offer</a>
+        <a class="back-link" href="/">Back</a>
+    </div>
+</body>
+</html>

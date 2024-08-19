@@ -1,0 +1,272 @@
+ a-js a-audio a-video a-canvas a-svg a-drag-drop a-geolocation a-history a-webworker a-autofocus a-input-placeholder a-textarea-placeholder a-local-storage a-gradients a-transform3d a-touch-scrolling a-text-shadow a-text-stroke a-box-shadow a-border-radius a-border-image a-opacity a-transform a-transition
+text-base sm:text-sm md:text-sm announcement
+
+
+font-inter flex flex-row min-h-[100vh] w-full justify-center
+flex flex-col justify-start items-center w-full
+sticky w-full top-0 left-0 right-0 z-[11]
+w-full text-base
+flex flex-row items-center justify-center upperHeaderBar
+flex w-full items-stretch max-w-[1441px] mx-auto pr-2 md:pl-0 justify-between
+flex flex-row items-stretch gap-2 mr-2
+lg:flex hidden 
+block px-4 text-gray-500 border-r border-teal-300/10 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-500 group
+mx-2 text-3xl transition-all duration-300 cursor-pointer text-white/75 group-hover:text-white group-hover:scale-105
+h-16 self-end items-stretch justify-center ml-2 lg:ml-0 hidden [@media(min-width:490px)]:flex
+text-secondary-100/80 hover:text-secondary-400 underline flex flex-col items-center justify-center cursor-pointer
+relative h-full -bottom-[5px]
+absolute logo-gradient-container w-full h-full bottom-0
+w-full h-[85%] absolute bg-gradient-to-b from-[#11444d] via-[#11444d] to-transparent
+relative cursor-pointer
+h-full pfsm:pr-2 border-none 
+h-full
+relative flex items-center justify-end h-full space-x-1
+opacity-0 h-16 pfmd:h-14 w-auto  
+scale-[.98] origin-center
+scale-[.85] origin-center
+scale-[.85] origin-center
+scale-[.85] origin-center
+scale-[.85] origin-center
+
+items-center px-5 py-2 font-roboto tracking-tight leading-none focus:outline-none transition-[background-color] duration-200 focus:outline-1 focus:outline-offset-2 focus:outline-primary-300/50 focus:shadow-2xl border border-primary-700 hover:bg-primary-600 hover:text-white bg-primary-700 disabled:opacity-50 disabled:cursor-not-allowed hover:disabled-opacity-25 rounded-full overflow-hidden text-white h-7
+flex flex-row gap-1 items-center h-full
+text-2xl -mt-[1px]
+flex-row hidden min1024:flex text-ellipsis whitespace-nowrap
+
+items-center px-5 py-2 font-roboto tracking-tight leading-none focus:outline-none transition-[background-color] duration-200 focus:outline-1 focus:outline-offset-2 focus:outline-primary-300/50 focus:shadow-2xl hover:text-white border text-white/80 border-primary-300/20 bg-primary-800/20 hover:bg-primary-700/30 disabled:opacity-50 disabled:cursor-not-allowed hover:disabled-opacity-25 rounded-full
+items-center px-5 py-2 font-roboto tracking-tight leading-none focus:outline-none transition-[background-color] duration-200 hover:bg-secondary-600 border border-[#AD853A] shadow-md hover:shadow-secondary-900 hover:shadow-sm active:bg-secondary-800 active:border-secondary-600 text-secondary-900 hover:text-secondary-900 focus:outline-1 focus:outline-offset-4 focus:outline-secondary-400/50 focus:shadow-md bg-gradient-to-t from-[#C9A052] to-[#C9A052] hover:bg-gradient-to-t hover:from-[#E2A828] hover:to-[#F8CA71] font-medium hover:border-secondary-400 disabled:opacity-50 disabled:cursor-not-allowed hover:disabled-opacity-25 disabled:text-secondary-800/75 rounded-full whitespace-nowrap
+w-full max-w-[1441px] pt-6 flex-1
+fixed h-full flex flex-col w-44 z-[3] lg:hidden shadow-2xl shadow-black/24
+flex flex-col flex-grow overflow-y-auto custom-scroll--tiny border-x border-primary-300/20 bg-gradient-to-l from-primary-900/10 to-[#031e2a]
+flex flex-col flex-1
+group flex items-center gap-3 px-4 py-2.5 border-b border-primary-300/20 first:border-t font-light uppercase font-roboto-condensed tracking-widest text-secondary-200/80 hover:bg-primary-300/40
+flex-shrink-0 w-5 h-5
+
+group flex items-center gap-3 px-4 py-2.5 border-b border-primary-300/20 first:border-t font-light uppercase font-roboto-condensed tracking-widest text-secondary-200/80 hover:bg-primary-300/40
+flex-shrink-0 w-5 h-5
+
+group flex items-center gap-3 px-4 py-2.5 border-b border-primary-300/20 first:border-t font-light uppercase font-roboto-condensed tracking-widest text-secondary-200/80 hover:bg-primary-300/40
+flex-shrink-0 w-5 h-5
+
+group flex items-center gap-3 px-4 py-2.5 border-b border-primary-300/20 first:border-t font-light uppercase font-roboto-condensed tracking-widest text-secondary-200/80 hover:bg-primary-300/40
+flex-shrink-0 w-5 h-5
+
+group flex items-center gap-3 px-4 py-2.5 border-b border-primary-300/20 first:border-t font-light uppercase font-roboto-condensed tracking-widest text-secondary-200/80 hover:bg-primary-300/40
+flex items-center justify-center overflow-hidden flex-shrink-0 w-5 h-5
+text-[#f4ecdc] opacity-80
+
+group flex items-center gap-3 px-4 py-2.5 border-b border-primary-300/20 first:border-t font-light uppercase font-roboto-condensed tracking-widest text-secondary-200/80 hover:bg-primary-300/40
+flex-shrink-0 w-5 h-5
+
+group flex items-center gap-3 px-4 py-2.5 border-b border-primary-300/20 first:border-t font-light uppercase font-roboto-condensed tracking-widest text-secondary-200/80 hover:bg-primary-300/40
+flex-shrink-0 w-5 h-5
+
+group flex items-center gap-3 px-4 py-2.5 border-b border-primary-300/20 first:border-t font-light uppercase font-roboto-condensed tracking-widest text-secondary-200/80 hover:bg-primary-300/40
+flex-shrink-0 w-5 h-5
+
+group flex items-center gap-3 px-4 py-2.5 border-b border-primary-300/20 first:border-t font-light uppercase font-roboto-condensed tracking-widest text-secondary-200/80 hover:bg-primary-300/40
+flex-shrink-0 w-5 h-5
+
+group flex items-center gap-3 px-4 py-2.5 border-b border-primary-300/20 first:border-t font-light uppercase font-roboto-condensed tracking-widest text-secondary-200/80 hover:bg-primary-300/40
+flex-shrink-0 w-5 h-5
+
+group flex items-center gap-3 px-4 py-2.5 border-b border-primary-300/20 first:border-t font-light uppercase font-roboto-condensed tracking-widest text-secondary-200/80 hover:bg-primary-300/40
+flex-shrink-0 w-5 h-5
+
+flex flex-col text-sm border border-black/20
+group flex flex-row items-center justify-start px-4 py-2.5 text-center gap-3 border-b border-primary-300/20 font-light text-secondary-200/80 hover:bg-primary-300/5
+flex-shrink-0 w-5 h-5 text-secondary-300/90
+tracking-widest uppercase font-roboto-condensed
+group flex flex-row items-center justify-start px-4 py-2.5 text-center gap-3 border-b border-primary-300/20 font-light text-secondary-200/80 hover:bg-primary-300/5
+flex-shrink-0 w-5 h-5 text-secondary-300/90
+tracking-widest uppercase font-roboto-condensed
+flex flex-col flex-1 h-full pl-44 lg:pl-0 z-[1]
+flex flex-col gap-3 w-full px-2 pfsm:px-4 align-middle items-center justify-center
+h-full w-full
+flex flex-row items-center justify-center w-full h-full pfsm:w-full pfsm:h-auto
+cursor-pointer w-full h-full
+hidden sm:block h-[75px]
+relative h-full flex justify-center items-center
+absolute transition-opacity duration-1000 ease-in-out opacity-100
+absolute transition-opacity duration-1000 ease-in-out opacity-0
+absolute transition-opacity duration-1000 ease-in-out opacity-0
+absolute transition-opacity duration-1000 ease-in-out opacity-0
+sm:hidden h-[100px]
+relative h-full flex justify-center items-center
+absolute transition-opacity duration-1000 ease-in-out opacity-100
+absolute transition-opacity duration-1000 ease-in-out opacity-0
+absolute transition-opacity duration-1000 ease-in-out opacity-0
+absolute transition-opacity duration-1000 ease-in-out opacity-0
+px-0 pfxs:px-2 pfsm:px-4 pt-3
+ w-full border-t border-primary-300/20
+flex flex-col flex-1 relative
+masthead overflow-hidden transition-all duration-150 ease-in-out mh_breeding
+w-full h-full transition-all duration-300 bg_scrim
+flex items-center flex-row space-x-2 pl-2 pfsm:pl-4 h-20 pb-10
+[&>ul>li+*:before]:content-[''] [&>ul>li+*:before]:mx-2 [&>ul>li+*:before]:block [&>ul>li+*:before]:w-2 [&>ul>li+*:before]:h-2 [&>ul>li+*:before]:rotate-45 [&>ul>li+*:before]:transform [&>ul>li+*:before]:opacity-40 [&>ul>li+*:before]:border-t [&>ul>li+*:before]:border-r [&>ul>li+*:before]:bg-transparent
+flex items-center whitespace-nowrap min-h-fit
+flex items-center
+text-2xl cursor-pointer text-white/75 hover:text-secondary-400 hover:border-primary-600
+flex items-center
+cursor-pointer text-white/75 hover:text-secondary-400 hover:border-primary-600
+flex items-center
+container mx-auto pfmd:min-h-[100px] flex flex-col relative mh_breeding
+flex flex-col flex-1 h-full items-stretch justify-end -mt-[23px]
+flex flex-row items-stretch justify-between h-full px-2 pfmd:px-0 xl:flex-col-reverse -mt-12
+flex-1 max-w-full
+flex flex-col h-full justify-items-end pb-4
+px-2 pfxs:px-0 flex flex-col items-stretch justify-end flex-1 h-full mtb-8 py-0 my-0 mb-1
+text-2xl font-normal text-secondary-400 font-roboto-slab mb-0
+flex flex-col py-0 my-0 mb-0 lg:flex-row
+flex flex-col ml-3 pfmd:ml-3 pflg:ml-0
+flex flex-col-reverse items-start gap-2 pfmd:items-center pfmd:flex-row lg:text-lg
+flex flex-row items-center gap-1
+w-9 h-9 p-0.5 border border-primary-300/75 rounded-full shadow-lg shadow-black/20
+font-bold text-lg text-white flex items-center px-2 py-0.5 space-x-1 border rounded-full border-primary-300/40 bg-black/40
+w-4
+text-xs
+flex flex-row gap-2
+text-2xl
+flex flex-row items-center justify-between
+text-white/75 flex items-center mt-1 text-sm
+flex flex-col justify-start w-full
+flex flex-row max-w-full whitespace-nowrap sm:text-xs
+flex flex-row justify-start items-center text-pink-300
+text-pink-300 -mr-1 text-xl
+flex items-center cursor-pointer hover:underline
+relative group
+absolute z-[9999] pointer-events-none opacity-0 group-hover:opacity-100 group-hover:delay-300 transition-opacity duration-200 p-2 font-medium text-sm whitespace-nowrap rounded shadow-lg left-1/2 -translate-x-1/2 top-[calc(100%+5px)] text-white bg-[#53B0A4]
+absolute z-[9999] pointer-events-none opacity-0 group-hover:opacity-100 group-hover:delay-300 transition-opacity duration-200 border-[6px] left-1/2 -translate-x-1/2 top-full border-x-transparent border-t-0 border-[#53B0A4]
+w-auto truncate max-w-[350px]
+whitespace-nowrap
+text-secondary-100/80 hover:text-secondary-400 underline block pl-1 cursor-pointer
+flex-row flex w-full pt-1
+flex flex-no-wrap items-center mb-0 text-base text-white/75
+pr-4 mb-5
+text-xs gap-1 z-[4] items-center pfmd:items-center pfmd:gap-2 flex-grow-0 inline-flex w-fit md:flex-col md:justify-start md:items-start md:gap-0
+flex items-center flex-row space-x-0 py-0.5 -skew-x-12
+rounded-sm px-2 text-center min-w-[7rem] font-medium tracking-wider uppercase pfl-text-shadow text-xs flex justify-center items-center gap-1 py-0.5 bg-green-600/75 text-white
+flex flex-row
+relative w-full border border-primary-300/20 bg-white/5 p-[1px] rounded-full my-3 mt-4 max-w-[60%] md:max-w-[100%] mb-6 pfmd:mb-4
+relative h-[6px] -top-[0px] left-0 right-0 bg-amber-300/60 border border-black rounded-full
+h-[20px] aspect-square border-[2px] rounded-full absolute z-[2] -top-[8px] flex items-center justify-center border-primary-700 bg-black
+absolute w-full py-0 text-sm text-right -top-5 right-7 text-white/75
+aspect-square absolute rounded-full border-primary-700 border bg-black h-[12px]
+flex flex-col justify-start mx-1
+flex flex-row items-center justify-start gap-1.5  pfmd:gap-4 md:mb-0
+flex flex-col items-center gap-0 justify-center
+text-white/75 font-inter
+flex flex-row relative
+flex justify-center items-center gap-0 pfsm:gap-1
+relative w-3 h-3 block
+absolute inset-0 w-3 h-3
+text-primary-600/20 w-3 h-3
+relative w-3 h-3 block
+absolute inset-0 w-3 h-3
+text-primary-600/20 w-3 h-3
+relative w-3 h-3 block
+absolute inset-0 w-3 h-3
+text-primary-600/20 w-3 h-3
+text-sm text-white/75
+flex flex-col items-center gap-0 justify-center
+text-white/75 font-inter
+flex flex-row relative
+flex justify-center items-center gap-0 pfsm:gap-1
+relative w-3 h-3 block
+absolute inset-0 w-3 h-3
+text-primary-600/20 w-3 h-3
+relative w-3 h-3 block
+absolute inset-0 w-3 h-3
+text-primary-600/20 w-3 h-3
+relative w-3 h-3 block
+absolute inset-0 w-3 h-3
+text-primary-600/20 w-3 h-3
+text-sm text-white/75
+flex flex-col items-center gap-0 justify-center
+text-white/75 font-inter
+flex flex-row relative
+flex justify-center items-center gap-0 pfsm:gap-1
+relative w-3 h-3 block
+absolute inset-0 w-3 h-3
+text-primary-600/20 w-3 h-3
+relative w-3 h-3 block
+absolute inset-0 w-3 h-3
+text-primary-600/20 w-3 h-3
+relative w-3 h-3 block
+text-primary-600/20 w-3 h-3
+text-sm text-white/75
+flex flex-col gap-2 p-0 pfmd:flex-row
+flex items-center justify-start child:h-full md:m-0 last-of-type:mb-3 md:last-of-type:border-t-0 p-0 border-b pfmd:border-b-0 border-primary-300/20
+flex gap-1 -space-y-1 lg:last-of-type:border-r-0 flex-row items-center justify-center px-0 pr-4 pfmd:flex
+pb-1 text-base font-normal pfmd:font-light pfmd:leading-4 font-roboto-slab text-secondary-300 whitespace-nowrap pfmd:pb-0
+hidden pfmd:block
+flex items-center justify-start child:h-full md:m-0 last-of-type:mb-3 md:last-of-type:border-t-0 h-full gap-2.5 p-0
+flex flex-col items-start gap-1 justify-center -space-y-1 lg:last-of-type:border-r-0
+text-sm text-white font-inter
+text-white/75 text-sm tracking-tighter whitespace-nowrap pfmd:tracking-normal
+flex flex-col items-start gap-1 justify-center -space-y-1 lg:last-of-type:border-r-0
+flex items-center flex-row space-x-1
+text-sm text-slate-300
+h-4 flex items-center justify-center overflow-hidden aspect-square w-4
+text-sm text-white/75 tracking-tighter whitespace-nowrap pfmd:tracking-normal
+flex flex-col items-start gap-1 justify-center -space-y-1 lg:last-of-type:border-r-0
+flex items-center flex-row space-x-1
+text-sm text-slate-300
+h-4 flex items-center justify-center overflow-hidden aspect-square w-4
+text-sm text-white/75 tracking-tighter whitespace-nowrap pfmd:tracking-normal
+flex flex-col items-start gap-1 justify-center -space-y-1 lg:last-of-type:border-r-0 pflg:border-r-0
+font-inter text-sm text-white
+text-sm text-white/75 tracking-tighter pfmd:tracking-normal
+flex flex-row w-full gap-4 items-center pb-2
+flex items-center justify-between gap-3 whitespace-nowrap md:w-full child:w-full md:flex-col md:child:text-center md:child:justify-center
+flex flex-row h-auto
+relative max-h-[450px] min-w-[700px] flex-1 overflow-hidden
+transition-opacity duration-300 opacity-100
+w-full h-full scale-x-[-1]
+transition-all duration-300 img-itself
+items-center px-5 py-2 font-roboto tracking-tight leading-none rounded focus:outline-none transition-[background-color] duration-200 focus:outline-1 focus:outline-offset-2 focus:outline-primary-300/50 focus:shadow-2xl border border-primary-700 hover:bg-primary-600 hover:text-white text-white/70 disabled:opacity-50 disabled:cursor-not-allowed hover:disabled-opacity-25 absolute bottom-4 right-20 bg-secondary
+container mx-auto px-0
+mb-2 relative
+border-b bg-gradient-to-l bg-[#11444d]  from-black/30 via-[#11444d]   to-[#11444d]  border-primary-700 absolute w-full h-[44px] 
+flex flex-col whitespace-nowrap no-scrollbar
+flex relative justify-between space-x-2 overflow-x-auto h-[44px]
+flex w-full   items-end pb-[1px]
+flex items-center h-full cursor-pointer px-6 pfmd:px-6 pflg:px-8 py-3 relative text-white/80 font-semibold bg-gradient-to-t from-primary-600 via-primary-700 to-primary-700 border-b border-primary-400 hover:text-white/80 pb-3 focus-visible:outline-none
+flex items-center cursor-pointer px-6 pfmd:px-6 pflg:px-8 py-3 font-normal text-white/60 relative bg-gradient-to-t from-transparent via-transparent to-transparent hover:bg-gradient-to-t hover:from-black/30 hover:via-black/20 hover:to-black/10 h-full hover:text-white/80 border-r border-primary-800/40 pb-3 focus-visible:outline-none
+flex items-center cursor-pointer px-6 pfmd:px-6 pflg:px-8 py-3 font-normal text-white/60 relative bg-gradient-to-t from-transparent via-transparent to-transparent hover:bg-gradient-to-t hover:from-black/30 hover:via-black/20 hover:to-black/10 h-full hover:text-white/80 border-r border-primary-800/40 pb-3 focus-visible:outline-none
+flex items-center cursor-pointer px-6 pfmd:px-6 pflg:px-8 py-3 font-normal text-white/60 relative bg-gradient-to-t from-transparent via-transparent to-transparent hover:bg-gradient-to-t hover:from-black/30 hover:via-black/20 hover:to-black/10 h-full hover:text-white/80 border-r border-primary-800/40 pb-3 focus-visible:outline-none
+flex items-center cursor-pointer px-6 pfmd:px-6 pflg:px-8 py-3 font-normal text-white/60 relative bg-gradient-to-t from-transparent via-transparent to-transparent hover:bg-gradient-to-t hover:from-black/30 hover:via-black/20 hover:to-black/10 h-full hover:text-white/80 border-r border-primary-800/40 pb-3 focus-visible:outline-none
+flex items-center cursor-pointer px-6 pfmd:px-6 pflg:px-8 py-3 font-normal text-white/60 relative bg-gradient-to-t from-transparent via-transparent to-transparent hover:bg-gradient-to-t hover:from-black/30 hover:via-black/20 hover:to-black/10 h-full hover:text-white/80 border-r border-primary-800/40 pb-3 focus-visible:outline-none
+tab-fade-left hidden
+tab-fade-right hidden
+flex flex-1 flex-col relative sm:min-h-[10rem] min-h-[15rem]
+absolute top-0 bottom-0 z-100 left-0 right-0 flex flex-col items-center space-y-5 bg-gradient-to-b from-primary-900/80 to-primary-900/20 shadow-2xl shadow-black/20 pt-0 justify-center rounded-none
+relative flex items-center justify-center w-20 h-20 p-0 border rounded-full bg-black/50 border-primary-700 undefined
+loadingSpinner
+path
+absolute h-[75%] animate-bounce top-[40%]
+text-xl font-light font-inter text-white/75
+flex items-end w-full
+relative w-full border-t border-primary-300/20 bg-black/10
+container mx-auto grid grid-cols-3 py-4 pfmd:py-8 lg:flex lg:flex-col lg:items-center lg:space-y-3
+flex flex-row gap-4 lg:gap-2 lg:flex-wrap lg:justify-center lg:items-center lg:mt-12
+text-secondary-100/80 hover:text-secondary-400 underline cursor-pointer font-roboto-condensed whitespace-nowrap
+text-secondary-100/80 hover:text-secondary-400 underline cursor-pointer whitespace-nowrap font-roboto-condensed
+text-secondary-100/80 hover:text-secondary-400 underline cursor-pointer font-roboto-condensed whitespace-nowrap
+text-secondary-100/80 hover:text-secondary-400 underline cursor-pointer font-roboto-condensed whitespace-nowrap
+flex justify-center flex-row relative font-bold lg:absolute lg:top-3
+flex justify-center items-center z-10 before:absolute before:items-center before:justify-center before:border-primary-300/20 before:border-2 before:rotate-45 before:h-11 before:w-11 before:bg-transparent before:drop-shadow-xl
+text-secondary-400 pl-1 font-light
+absolute z-0 w-10 border-t-2 border-primary-300/20 -ml-24
+absolute z-0 w-10 border-t-2 border-primary-300/20 ml-24
+flex justify-end items-center flex-row space-x-3
+text-secondary-100/80 hover:text-secondary-400 underline cursor-pointer text-2xl
+text-secondary-100/80 hover:text-secondary-400 underline cursor-pointer text-2xl
+text-secondary-100/80 hover:text-secondary-400 underline cursor-pointer text-2xl
+text-secondary-100/80 hover:text-secondary-400 underline cursor-pointer text-2xl
+text-secondary-100/80 hover:text-secondary-400 underline cursor-pointer text-2xl
+sticky bottom-0 left-0 right-0 z-10 flex-col block
+relative
+items-center font-roboto tracking-tight focus:outline-offset-2 focus:outline-primary-300/50 focus:shadow-2xl hover:bg-primary-600 hover:text-white bg-primary-700 disabled:opacity-50 disabled:cursor-not-allowed hover:disabled-opacity-25 absolute md:right-6 bottom-10 right-10 z-30 outline-none focus:outline-none focus:outline-0 shadow-md text-gray-100 border border-gray-100 border-opacity-50 cursor-pointer p-3 rounded-xl text-3xl transition-opacity duration-300 opacity-0 pointer-events-none
+space-y-1
+fwcim-container
